@@ -1,10 +1,8 @@
+
 package uk.ac.westminster.products_api;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,13 +13,15 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping
+    // Get all products
+    @GetMapping("/products")
     public List<Product> getAllProducts() {
-        return productService.getAllProducts();
+        return productService.getProducts();
     }
 
+    // Get a product by ID
     @GetMapping("/products/{id}")
     public Product getProduct(@PathVariable Long id) {
-        return new Product(id, "Laptop", 999.99);
+        return productService.getProductById(id);
     }
 }
