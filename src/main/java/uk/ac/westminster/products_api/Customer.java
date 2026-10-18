@@ -2,25 +2,31 @@ package uk.ac.westminster.products_api;
 
 public class Customer {
 
-    private int id;
+    private Long id;
     private String name;
+    private String email;
     private Address address;
 
     public Customer() {
     }
 
-    public Customer(int id, String name, Address address) {
+    public Customer(Long id, String name, String email, Address address) {
         this.id = id;
         this.name = name;
+        this.email = email;
         this.address = address;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public Address getAddress() {

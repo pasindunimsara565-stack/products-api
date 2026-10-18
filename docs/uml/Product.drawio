@@ -1,17 +1,46 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="FBiOLxoOJa5YSsO5s70G">
-    <mxGraphModel dx="494" dy="311" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1704" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Ur6jQfuquJmlb9TqTzBr-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Product" vertex="1">
-          <mxGeometry height="190" width="250" x="360" y="250" as="geometry" />
+          <mxGeometry height="240" width="240" x="780" y="580" as="geometry" />
         </mxCell>
         <mxCell id="Ur6jQfuquJmlb9TqTzBr-2" parent="Ur6jQfuquJmlb9TqTzBr-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- id: Long&lt;div&gt;- name: String&lt;/div&gt;&lt;div&gt;- price: double&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="250" y="30" as="geometry" />
+          <mxGeometry height="50" width="240" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="Ur6jQfuquJmlb9TqTzBr-3" parent="Ur6jQfuquJmlb9TqTzBr-1" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ Product()&lt;br&gt;+ Product(id:Long, name, price)&lt;br&gt;+ getId():Long&lt;br&gt;+ getName(): String&lt;div&gt;+ getPrice(): double&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="110" width="250" y="80" as="geometry" />
+        <mxCell id="Ur6jQfuquJmlb9TqTzBr-3" parent="Ur6jQfuquJmlb9TqTzBr-1" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ Product()&lt;br&gt;+ Product(id:Long, name, price)&lt;br&gt;+ getId():Long&lt;br&gt;+ getName(): String&lt;div&gt;+ getPrice(): double&lt;/div&gt;&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ setId(id: Long): void&lt;br&gt;+ setName(name: String): void&lt;br&gt;+ setPrice(price: double): void&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ProductController" vertex="1">
+          <mxGeometry height="240" width="240" x="350" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-2" parent="x2BCmwNc48g3Ds7EYXdc-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- productService: ProductService&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="50" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-3" parent="x2BCmwNc48g3Ds7EYXdc-1" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ getAllProducts(): List&amp;lt;Product&amp;gt;&lt;br&gt;+ getProductById(id: Long): Product&lt;br&gt;+ addProduct(product: Product): Product&lt;br&gt;+ deleteProduct(id: Long): void&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ProductService" vertex="1">
+          <mxGeometry height="240" width="280" x="760" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-6" parent="x2BCmwNc48g3Ds7EYXdc-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- products: List&amp;lt;Product&amp;gt;&lt;br/&gt;- nextId: Long&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="50" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-7" parent="x2BCmwNc48g3Ds7EYXdc-5" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ getAllProducts(): List&amp;lt;Product&amp;gt;&lt;br/&gt;+ getProductById(id: Long): Optional&amp;lt;Product&amp;gt;&lt;br/&gt;+ addProduct(product: Product): Product&lt;br/&gt;+ deleteProduct(id: Long): void&lt;br/&gt;+ findByName(name: String): List&amp;lt;Product&amp;gt;&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-8" edge="1" parent="1" source="x2BCmwNc48g3Ds7EYXdc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.496;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Ur6jQfuquJmlb9TqTzBr-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x2BCmwNc48g3Ds7EYXdc-9" edge="1" parent="1" source="x2BCmwNc48g3Ds7EYXdc-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.008;exitY=0.413;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" target="x2BCmwNc48g3Ds7EYXdc-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="440" as="sourcePoint" />
+            <mxPoint x="700" y="440" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
