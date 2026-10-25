@@ -23,7 +23,7 @@ public class Product {
         return name;
     }
 
-    public double getPrice() {
+    public double getprice() {
         return price;
     }
 
