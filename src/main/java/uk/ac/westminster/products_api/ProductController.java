@@ -18,19 +18,24 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-    // ---- in ProductController.java ----
+
     @GetMapping("/products/{id}")
     public Product getProductById(@PathVariable Long id) {
         return productService.getProductById(id).orElse(null);
     }
+
     @PostMapping("/products")
     public Product addProduct(@RequestBody Product product) {
         return productService.addProduct(product);
     }
-    // ---- in ProductController.java ----
+
     @DeleteMapping("/products/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
+    }
+    @GetMapping("/products/summarise")
+    public List<String> getSummarises() {
+        return productService.getAllsummaries();
     }
 
     @GetMapping("/products/search")

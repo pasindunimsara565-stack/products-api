@@ -41,6 +41,16 @@ public class ProductService {
                 .findFirst();
     }
 
+    public List<String> getAllsummaries(){
+
+        List<String> summaries = new ArrayList<>();
+
+        for (Product p : products){
+            summaries.add(p.getSummary());
+        }
+        return summaries;
+    }
+
     public void deleteProduct(Long id) {
         products.removeIf(p -> p.getId().equals(id));
     }
